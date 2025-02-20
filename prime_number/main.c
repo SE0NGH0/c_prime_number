@@ -18,11 +18,13 @@ int main(void) {
 			{
 				break;
 			}
-		}
+		
+		// 최종까지 나머지가 0으로 떨어지지 않은 수는 pn으로 판정하여 화면에 표시한다.
 		if (incValue == stepValue)
 		{
 			printf("%5d", stepValue);
 			column++;
+			// 5개를 넘어가면 줄바꿈을 수행한다.
 			if (column == 5)
 			{
 				column = 0;
