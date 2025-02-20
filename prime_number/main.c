@@ -7,7 +7,7 @@ int main(void) {
 	int stepValue; // 단계별 검증할 수
 	int incValue; // 프라임넘버를 확인하기 위한 나눔수
 
-	printf("2 이상의 정수를 입력하세요 : ");
+	printf("2 이상의 정수를 입력 : ");
 	scanf("%d", &inputValue);
 
 	for (stepValue = 2; stepValue <= inputValue; stepValue++)
