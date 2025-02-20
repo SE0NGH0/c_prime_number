@@ -9,15 +9,17 @@ int main(void) {
 
 	printf("2 이상의 정수를 입력 : ");
 	scanf("%d", &inputValue);
-
+	// 2부터 1씩 증가하면서 입력 받은 수까지 증가 후 종료하는 루프
 	for (stepValue = 2; stepValue <= inputValue; stepValue++)
 	{
+		// 증가된 수를 1을 제외한 자신의 수까지 1씩 증가하면서 나누어보고 나머지가 0이면 pn가 아님
 		for (incValue = 2; incValue < stepValue; incValue++)
 		{
 			if (stepValue % incValue == 0)
 			{
 				break;
 			}
+		}
 		
 		// 최종까지 나머지가 0으로 떨어지지 않은 수는 pn으로 판정하여 화면에 표시한다.
 		if (incValue == stepValue)
